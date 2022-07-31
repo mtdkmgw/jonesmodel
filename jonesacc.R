@@ -1,4 +1,4 @@
-acc <- read.csv("zaimu/ƒTƒ“ƒR[ƒ‹ T5985.csv",header = TRUE)
+acc <- read.csv("zaimu.csv",header = TRUE)
 deltasales <- subset(acc$sales,acc$year>2000) - subset(acc$sales,acc$year<2022)
 deltasales <- data.frame(deltasales)
 acc <- acc[c(-1),]
